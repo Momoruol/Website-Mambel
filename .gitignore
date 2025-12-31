@@ -1,0 +1,12 @@
+#ignorar arquivos node
+node_modules
+
+#ignorar arquivos .json criados via npm init
+package-lock.json
+package.json
+
+#ignorar config tailwind
+tailwind.config.js
+
+#ignorar input.css usado como referencia em tailwind
+input.css
