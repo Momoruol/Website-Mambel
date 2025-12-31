@@ -833,7 +833,8 @@ video {
      border-image: fill 1 linear-gradient(hsl(0 0% 0% / 0.8));
 }
 
-html {
+html,
+body {
   overflow-x: hidden;
 }
 
