@@ -836,6 +836,7 @@ video {
 html,
 body {
   overflow-x: hidden;
+  width: 100%;
 }
 
 h1,
@@ -905,6 +906,7 @@ button {
 }
 
 #menu {
+  right: 0;
   transform: translateX(100%);
   transition: 0.5s ease-in-out;
 }
