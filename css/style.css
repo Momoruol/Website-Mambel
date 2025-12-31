@@ -588,12 +588,21 @@ video {
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
 
 .relative {
   position: relative;
+}
+
+.inset-y-0 {
+  top: 0px;
+  bottom: 0px;
 }
 
 .right-0 {
@@ -762,6 +771,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -836,7 +850,6 @@ video {
 html,
 body {
   overflow-x: hidden;
-  width: 100%;
 }
 
 h1,
@@ -906,7 +919,6 @@ button {
 }
 
 #menu {
-  right: 0;
   transform: translateX(100%);
   transition: 0.5s ease-in-out;
 }
@@ -916,12 +928,16 @@ button {
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   transform: translateX(0%);
-  position: fixed;
 }
 
 footer {
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
 }
 
 .hover\:text-blue-700:hover {
