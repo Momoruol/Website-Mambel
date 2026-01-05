@@ -738,10 +738,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[url\(\.\.\/imagens\/hero\.png\)\] {
-  background-image: url(../imagens/hero.png);
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -769,11 +765,6 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .pt-4 {
@@ -843,8 +834,8 @@ video {
 }
 
 .hero__overlay {
-  -o-border-image: fill 1 linear-gradient(hsl(0 0% 0% / 0.8));
-     border-image: fill 1 linear-gradient(hsl(0 0% 0% / 0.8));
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("../imagens/hero.png");
 }
 
 html,
