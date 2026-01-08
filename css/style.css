@@ -680,16 +680,12 @@ video {
   width: 15rem;
 }
 
-.max-w-sm {
-  max-width: 24rem;
-}
-
-.max-w-5xl {
-  max-width: 64rem;
-}
-
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-sm {
+  max-width: 24rem;
 }
 
 .grid-cols-1 {
@@ -732,12 +728,12 @@ video {
   gap: 1rem;
 }
 
-.gap-8 {
-  gap: 2rem;
-}
-
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .border {
@@ -778,14 +774,14 @@ video {
   padding: 2rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pt-4 {

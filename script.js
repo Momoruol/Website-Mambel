@@ -26,14 +26,16 @@ function sideClose(){
 /* stpageflip para flipbook do catalogo */
 
 const pageFlip = new St.PageFlip(document.getElementById("book"), {
-  width: 320,
-  height: 248,
+  width: 3662,
+  height: 2835,
   minWidth:320,
-  maxWidth:1000,
+  maxWidth:1000 ,
   minHeight:248,
   maxHeight:774,
   size: "stretch",
   showCover: true,
+  usePortrait:true,
+  autosize:true,
   mobileScrollSupport: true,
   maxShadowOpacity:0.5,
 });
