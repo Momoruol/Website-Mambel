@@ -9,7 +9,7 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="hero__overlay">
+    <div class="hero__overlay md:hero__overlay--desktop">
       <div class="container mx-auto relative z-10">
         <nav class="flex justify-between items-center px-4">
           <a href="index.html"
@@ -20,11 +20,25 @@
           /></a>
           <div class="hidden lg:flex">
             <ul class="text-white text-xl flex gap-8">
-              <li><a href="produtos.html">Produtos</a></li>
-              <li><a href="catalogo.html">Catálogo</a></li>
-              <li><a href="ondecomprar.html">Onde Comprar</a></li>
-              <li><a href="representantes.html">Representantes</a></li>
-              <li><a href="contato.html">Contato</a></li>
+              <li>
+                <a class="navbar__link--hero" href="produtos.html">Produtos</a>
+              </li>
+              <li>
+                <a class="navbar__link--hero" href="catalogo.html">Catálogo</a>
+              </li>
+              <li>
+                <a class="navbar__link--hero" href="ondecomprar.html"
+                  >Onde Comprar</a
+                >
+              </li>
+              <li>
+                <a class="navbar__link--hero" href="representantes.html"
+                  >Representantes</a
+                >
+              </li>
+              <li>
+                <a class="navbar__link--hero" href="contato.html">Contato</a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -52,7 +66,7 @@
       </div>
       <div
         id="backdrop"
-        class="container mx-auto h-[550px] lg:h-[650px] xl:h-[750px] relative p-5"
+        class="container mx-auto h-[500px] md:h-[550px] lg:h-[625px] xl:h-[675px] relative p-5"
       >
         <div class="h-full flex flex-col justify-end gap-2 text-white">
           <h1 class="text-lg font-medium md:text-xl">Móveis Mambel</h1>

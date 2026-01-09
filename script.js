@@ -40,6 +40,8 @@ const pageFlip = new St.PageFlip(document.getElementById("book"), {
   maxShadowOpacity:0.5,
 });
 
+
+
 pageFlip.loadFromImages([
   "./catalogo/page_1.jpg",
   "./catalogo/page_2.jpg",
@@ -94,6 +96,31 @@ pageFlip.loadFromImages([
   "./catalogo/page_51.jpg",
   "./catalogo/page_52.jpg",
 ]);
+setTimeout(fixCanvasDPR, 100);
 
 document.getElementById("prev").onclick = () => pageFlip.flipPrev();
 document.getElementById("next").onclick = () => pageFlip.flipNext();
+
+pageFlip.on("flip", fixCanvasDPR);
+window.addEventListener("resize", fixCanvasDPR);
+
+
+/* ============================================================ */
+/* Melhora a nitidez da versao mobile do catalogo */
+function fixCanvasDPR() {
+  const canvas = document.querySelector(".stf__canvas");
+  if (!canvas) return;
+
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.getBoundingClientRect();
+
+  canvas.width = rect.width * dpr;
+  canvas.height = rect.height * dpr;
+
+  canvas.style.width = rect.width + "px";
+  canvas.style.height = rect.height + "px";
+
+  const ctx = canvas.getContext("2d");
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+}
+
