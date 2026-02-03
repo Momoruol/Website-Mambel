@@ -661,16 +661,16 @@ video {
   margin-left: 2rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-24 {
   margin-top: 6rem;
 }
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .flex {
@@ -726,10 +726,6 @@ video {
   min-width: fit-content;
 }
 
-.max-w-2xl {
-  max-width: 42rem;
-}
-
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -752,10 +748,6 @@ video {
 
 .max-w-xs {
   max-width: 20rem;
-}
-
-.max-w-60 {
-  max-width: 15rem;
 }
 
 .cursor-pointer {
@@ -1022,10 +1014,6 @@ video {
 
 .tracking-wide {
   letter-spacing: 0.025em;
-}
-
-.tracking-wider {
-  letter-spacing: 0.05em;
 }
 
 .tracking-widest {
@@ -1424,10 +1412,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .md\:w-1\/2 {
-    width: 50%;
-  }
-
   .md\:max-w-3xl {
     max-width: 48rem;
   }
@@ -1436,24 +1420,8 @@ footer {
     max-width: 32rem;
   }
 
-  .md\:max-w-xs {
-    max-width: 20rem;
-  }
-
-  .md\:max-w-md {
-    max-width: 28rem;
-  }
-
   .md\:max-w-xl {
     max-width: 36rem;
-  }
-
-  .md\:flex-row {
-    flex-direction: row;
-  }
-
-  .md\:gap-10 {
-    gap: 2.5rem;
   }
 
   .md\:gap-16 {
@@ -1493,20 +1461,12 @@ footer {
     display: none;
   }
 
-  .lg\:w-9\/12 {
-    width: 75%;
-  }
-
   .lg\:max-w-5xl {
     max-width: 64rem;
   }
 
   .lg\:max-w-md {
     max-width: 28rem;
-  }
-
-  .lg\:max-w-sm {
-    max-width: 24rem;
   }
 
   .lg\:grid-cols-3 {
@@ -1517,10 +1477,6 @@ footer {
     flex-direction: row;
   }
 
-  .lg\:justify-end {
-    justify-content: flex-end;
-  }
-
   .lg\:justify-center {
     justify-content: center;
   }
@@ -1529,12 +1485,12 @@ footer {
     gap: 4rem;
   }
 
-  .lg\:gap-40 {
-    gap: 10rem;
-  }
-
   .lg\:gap-20 {
     gap: 5rem;
+  }
+
+  .lg\:gap-40 {
+    gap: 10rem;
   }
 
   .lg\:pt-40 {
@@ -1550,18 +1506,9 @@ footer {
     font-size: 4.5rem;
     line-height: 1;
   }
-
-  .lg\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
 }
 
 @media (min-width: 1280px) {
-  .xl\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
