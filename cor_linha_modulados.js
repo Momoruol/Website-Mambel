@@ -170,7 +170,7 @@ function ravi_4p_aberto(div){
 function mudar_cor_ravi_3_portas(div){
   /* troca a borda para a cor da imagem mostrada */
   const local = div.target
-  const img = ['../imagens/Roup. RAVI 3P Reflectas - Branco.jpg','../imagens/Roup. RAVI 3P Reflectas - Grafite.jpg','../imagens/Roup. RAVI 3P Reflectas - Olmo.jpg']
+  const img = ['../imagens/Roup. RAVI 3P Reflectas - Branco.jpg','../imagens/Roup. RAVI 3P Reflectas - grafite.jpg','../imagens/Roup. RAVI 3P Reflectas - Olmo.jpg']
   if(local.classList.contains('active')){
     return
     }else{
