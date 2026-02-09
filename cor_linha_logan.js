@@ -2,6 +2,7 @@
 
 /* variaveis */
 
+/* Linha Logan */
 /* Logan 6p */
 const logan_6_portas_cor_1 = document.getElementById('logan_cor_1')
 const logan_6_portas_cor_2 = document.getElementById('logan_cor_2')
@@ -158,6 +159,7 @@ function mudar_cor_criado_logan(div){
 
 }
 
+
 /* Event Listeners */
 
 /* Logan 4 portas */
@@ -179,3 +181,4 @@ comoda_logan_cor_2.addEventListener('click', mudar_cor_comoda_logan)
 /* Criado Logan */
 criado_logan_cor_1.addEventListener('click', mudar_cor_criado_logan)
 criado_logan_cor_2.addEventListener('click', mudar_cor_criado_logan)
+
