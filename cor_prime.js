@@ -44,7 +44,7 @@ function mudar_cor_prime(div){
 }
 function prime_aberto(div){
   const local = div.target
-  const img = ['../imagens/ROPEIRO PRIME.jpg','../imagens/ROPEIRO PRIME.jpg', '../imagens/Roupeiro star Nogueira - F.I.Aberto Decorado.jpg', '../imagens/Roupeiro star Nogueira - F.I.Aberto Decorado.jpg']
+  const img = ['../imagens/ROPEIRO PRIME.jpg','../imagens/ROPEIRO PRIME.jpg', '../imagens/Roupeiro Star Nogueira - F.I.Aberto Decorado.jpg', '../imagens/Roupeiro Star Nogueira - F.I.Aberto Decorado.jpg']
   prime_dot_1.classList.remove('dot__active')
   prime_dot_2.classList.remove('dot__active')
   local.classList.add('dot__active')
