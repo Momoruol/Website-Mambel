@@ -160,6 +160,34 @@ function mudar_cor_criado_logan(div){
 }
 
 
+/* Swiper */
+function ativarSwipe(imagem, dot1, dot2) {
+
+  let startX = 0;
+
+  imagem.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  imagem.addEventListener("touchend", (e) => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = endX - startX;
+
+    if (Math.abs(diff) < 50) return; // evita swipe pequeno
+
+    if (diff < 0) {
+      // esquerda → dot 2
+      dot2.click();
+    } else {
+      // direita → dot 1
+      dot1.click();
+    }
+  });
+
+}
+ativarSwipe(imagem_logan_6_portas, dot_logan_6_portas_1, dot_logan_6_portas_2);
+ativarSwipe(imagem_logan_4_portas, dot_logan_4_portas_1, dot_logan_4_portas_2);
+
 /* Event Listeners */
 
 /* Logan 4 portas */

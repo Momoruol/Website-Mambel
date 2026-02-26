@@ -65,6 +65,32 @@ function prime_aberto(div){
   }
 }
 
+/* Swiper */
+function ativarSwipe(imagem, dot1, dot2) {
+
+  let startX = 0;
+
+  imagem.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  imagem.addEventListener("touchend", (e) => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = endX - startX;
+
+    if (Math.abs(diff) < 50) return; // evita swipe pequeno
+
+    if (diff < 0) {
+      // esquerda → dot 2
+      dot2.click();
+    } else {
+      // direita → dot 1
+      dot1.click();
+    }
+  });
+
+}
+ativarSwipe(imagem_prime, prime_dot_1, prime_dot_2);
 
 /* Event Listeners */
 prime_cor_1.addEventListener('click', mudar_cor_prime)

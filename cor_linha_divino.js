@@ -24,7 +24,6 @@ function reset(dot_1, dot_2){
   // define o primeiro como ativo
   dot_1.classList.add('dot__active');
 }
-
 /* divino sapateira */
 function divino_sap_aberto(div){
   const local = div.target
@@ -86,6 +85,32 @@ function mudar_cor_criado_divino(div){
 
 }
 
+/* Swiper */
+function ativarSwipe(imagem, dot1, dot2) {
+
+  let startX = 0;
+
+  imagem.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  imagem.addEventListener("touchend", (e) => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = endX - startX;
+
+    if (Math.abs(diff) < 50) return; // evita swipe pequeno
+
+    if (diff < 0) {
+      // esquerda → dot 2
+      dot2.click();
+    } else {
+      // direita → dot 1
+      dot1.click();
+    }
+  });
+
+}
+ativarSwipe(imagem_divino_sap, dot_divino_sap_1, dot_divino_sap_2);
 
 /* Event Listeners */
 

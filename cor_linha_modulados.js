@@ -47,6 +47,14 @@ const dot_ravi_canto_1 = document.getElementById('ravi_canto_dot-1')
 const dot_ravi_canto_2 = document.getElementById('ravi_canto_dot-2')
 const imagem_ravi_canto = document.getElementById('imagem_ravi_canto')
 
+/* Ravi Cabeceira */
+const ravi_cabeceira_cor_1 = document.getElementById('ravi_cabeceira_cor_1')
+const ravi_cabeceira_cor_2 = document.getElementById('ravi_cabeceira_cor_2')
+const ravi_cabeceira_cor_3 = document.getElementById('ravi_cabeceira_cor_3')
+const dot_ravi_cabeceira_1 = document.getElementById('ravi_cabeceira_dot-1')
+const dot_ravi_cabeceira_2 = document.getElementById('ravi_cabeceira_dot-2')
+const imagem_ravi_cabeceira = document.getElementById('imagem_ravi_cabeceira')
+
 
 /* Functions */
 /* Function de reset do ponto abaixo da imagem */
@@ -333,7 +341,7 @@ function mudar_cor_ravi_canto(div){
   /* troca a borda para a cor da imagem mostrada */
   const local = div.target
   const img = ['../imagens/Roup. RAVI Canto Reflecta - Branco.jpg','../imagens/Roup. RAVI Canto Reflecta - Grafite.jpg','../imagens/Roup. RAVI Canto Reflecta - Olmo.jpg']
-  if(local.classList.contains('active')){canto
+  if(local.classList.contains('active')){
     return
     }else{
         const ravi = new Array(ravi_canto_cor_1,ravi_canto_cor_2,ravi_canto_cor_3)
@@ -357,6 +365,70 @@ function mudar_cor_ravi_canto(div){
   }
   reset(dot_ravi_canto_1,dot_ravi_canto_2)
 }
+
+/* Ravi cabeceira */
+function mudar_cor_ravi_cabeceira(div){
+  /* troca a borda para a cor da imagem mostrada */
+  const local = div.target
+  const img = ['../imagens/Modulado Ravi Mesa de Cabeceira 1208 Branco - (1) F.I. Aberto Sem Decoração.jpg','../imagens/Modulado Ravi Mesa de Cabeceira 1208 Grafito - (1) F.I. Aberto Sem Decoração.jpg','../imagens/Modulado Ravi Mesa de Cabeceira 1208 Olmo - (1) F.I. Aberto Sem Decoração.jpg']
+  if(local.classList.contains('active')){
+    return
+    }else{
+        const ravi = new Array(ravi_cabeceira_cor_1,ravi_cabeceira_cor_2,ravi_cabeceira_cor_3)
+        ravi.forEach((item) => {
+            if (item === local){
+                item.classList.add('active')
+            }else{
+                item.classList.remove('active')
+            }
+        })
+    
+  }
+  
+  /* troca a imagem mostrada com referencia ao elemento que tem a class active */
+  if(ravi_cabeceira_cor_1.classList.contains('active')){
+    imagem_ravi_cabeceira.src= img[0]
+  }else if(ravi_cabeceira_cor_2.classList.contains('active')){
+    imagem_ravi_cabeceira.src=img[1]
+  }else{
+    imagem_ravi_cabeceira.src=img[2]
+  }
+  reset(dot_ravi_cabeceira_1,dot_ravi_cabeceira_2)
+}
+
+/* Swiper */
+function ativarSwipe(imagem, dot1, dot2) {
+
+  let startX = 0;
+
+  imagem.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  imagem.addEventListener("touchend", (e) => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = endX - startX;
+
+    if (Math.abs(diff) < 50) return; // evita swipe pequeno
+
+    if (diff < 0) {
+      // esquerda → dot 2
+      dot2.click();
+    } else {
+      // direita → dot 1
+      dot1.click();
+    }
+  });
+
+}
+ativarSwipe(imagem_ravi_6p, dot_ravi_6p_1, dot_ravi_6p_2);
+ativarSwipe(imagem_ravi_4p, dot_ravi_4p_1, dot_ravi_4p_2);
+ativarSwipe(imagem_ravi_3p, dot_ravi_3p_1, dot_ravi_3p_2);
+ativarSwipe(imagem_ravi_2p, dot_ravi_2p_1, dot_ravi_2p_2);
+ativarSwipe(imagem_ravi_1p, dot_ravi_1p_1, dot_ravi_1p_2);
+ativarSwipe(imagem_ravi_canto, dot_ravi_canto_1, dot_ravi_canto_2);
+ativarSwipe(imagem_ravi_cabeceira, dot_ravi_cabeceira_1, dot_ravi_cabeceira_2);
+
 
 /* Event Listeners */
 /* Ravi 6 Portas */
@@ -398,3 +470,8 @@ dot_ravi_1p_2.addEventListener('click', ravi_1p_aberto)
 ravi_canto_cor_1.addEventListener('click', mudar_cor_ravi_canto)
 ravi_canto_cor_2.addEventListener('click', mudar_cor_ravi_canto)
 ravi_canto_cor_3.addEventListener('click', mudar_cor_ravi_canto)
+
+/* Ravi cabeceira */
+ravi_cabeceira_cor_1.addEventListener('click', mudar_cor_ravi_cabeceira)
+ravi_cabeceira_cor_2.addEventListener('click', mudar_cor_ravi_cabeceira)
+ravi_cabeceira_cor_3.addEventListener('click', mudar_cor_ravi_cabeceira)

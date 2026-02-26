@@ -123,6 +123,35 @@ function south_aberto_2(div){
   }
 }
 
+/* Swiper */
+function ativarSwipe(imagem, dot1, dot2) {
+
+  let startX = 0;
+
+  imagem.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  imagem.addEventListener("touchend", (e) => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = endX - startX;
+
+    if (Math.abs(diff) < 50) return; // evita swipe pequeno
+
+    if (diff < 0) {
+      // esquerda → dot 2
+      dot2.click();
+    } else {
+      // direita → dot 1
+      dot1.click();
+    }
+  });
+
+}
+ativarSwipe(imagem_south, south_dot_1, south_dot_2);
+ativarSwipe(imagem_south_2, south_2_dot_1, south_2_dot_2);
+
+
 /* Event Listeners */
 south_cor_1.addEventListener('click', mudar_cor_south)
 south_cor_2.addEventListener('click', mudar_cor_south)
