@@ -3,10 +3,12 @@ const menu = document.getElementById('menu')
 const body = document.querySelector('body')
 const backdrop = document.getElementById('backdrop')
 
+
 /* ======================================================= */
 
 btn.addEventListener('click', navToggle)
 backdrop.addEventListener('click', sideClose)
+
 
 /* ======================================================= */
 
@@ -21,3 +23,5 @@ function sideClose(){
   menu.classList.remove('open')
   body.classList.remove('no-scroll')
 }
+
+

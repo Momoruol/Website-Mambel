@@ -774,8 +774,8 @@ video {
   max-width: 20rem;
 }
 
-.max-w-3xl {
-  max-width: 48rem;
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -975,6 +975,10 @@ video {
 
 .pl-6 {
   padding-left: 1.5rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
 }
 
 .pt-20 {
