@@ -51,8 +51,6 @@ const imagem_ravi_canto = document.getElementById('imagem_ravi_canto')
 const ravi_cabeceira_cor_1 = document.getElementById('ravi_cabeceira_cor_1')
 const ravi_cabeceira_cor_2 = document.getElementById('ravi_cabeceira_cor_2')
 const ravi_cabeceira_cor_3 = document.getElementById('ravi_cabeceira_cor_3')
-const dot_ravi_cabeceira_1 = document.getElementById('ravi_cabeceira_dot-1')
-const dot_ravi_cabeceira_2 = document.getElementById('ravi_cabeceira_dot-2')
 const imagem_ravi_cabeceira = document.getElementById('imagem_ravi_cabeceira')
 
 
@@ -70,7 +68,7 @@ function reset(dot_1, dot_2){
 function mudar_cor_ravi_6_portas(div){
   /* troca a borda para a cor da imagem mostrada */
   const local = div.target
-  const img = ['../imagens/Roup. RAVI 6P Reflectas - Branco.jpg','../imagens/Roup. RAVI 6P Reflectas - Grafite.jpg','../imagens/Roup. RAVI 6P Reflectas - Olmo.jpg']
+  const img = ['../../imagens/Roup. RAVI 6P Reflectas - Branco.jpg','../../imagens/Roup. RAVI 6P Reflectas - Grafite.jpg','../../imagens/Roup. RAVI 6P Reflectas - Olmo.jpg']
   if(local.classList.contains('active')){
     return
     }else{
@@ -97,7 +95,7 @@ function mudar_cor_ravi_6_portas(div){
 }
 function ravi_6p_aberto(div){
   const local = div.target
-  const img = ['../imagens/Roup. RAVI 6P Reflectas - Branco.jpg','../imagens/Roup. RAVI 6P Reflectas - Grafite.jpg', '../imagens/Roup. RAVI 6P Reflectas - Olmo.jpg', '../imagens/Roup RAVI 6P Interno - Branco.jpg', '../imagens/Roup RAVI 6P Interno - Grafite.jpg', '../imagens/Roup RAVI 6P Interno - Olmo.jpg']
+  const img = ['../../imagens/Roup. RAVI 6P Reflectas - Branco.jpg','../../imagens/Roup. RAVI 6P Reflectas - Grafite.jpg', '../../imagens/Roup. RAVI 6P Reflectas - Olmo.jpg', '../../imagens/Roup RAVI 6P Interno - Branco.jpg', '../../imagens/Roup RAVI 6P Interno - Grafite.jpg', '../../imagens/Roup RAVI 6P Interno - Olmo.jpg']
   dot_ravi_6p_1.classList.remove('dot__active')
   dot_ravi_6p_2.classList.remove('dot__active')
   local.classList.add('dot__active')
@@ -124,7 +122,7 @@ function ravi_6p_aberto(div){
 function mudar_cor_ravi_4_portas(div){
   /* troca a borda para a cor da imagem mostrada */
   const local = div.target
-  const img = ['../imagens/Roup. RAVI 4P Reflectas - Branco.jpg','../imagens/Roup. RAVI 4P Reflectas - Grafite.jpg','../imagens/Roup. RAVI 4P Reflectas - Olmo.jpg']
+  const img = ['../../imagens/Roup. RAVI 4P Reflectas - Branco.jpg','../../imagens/Roup. RAVI 4P Reflectas - Grafite.jpg','../../imagens/Roup. RAVI 4P Reflectas - Olmo.jpg']
   if(local.classList.contains('active')){
     return
     }else{
@@ -151,7 +149,7 @@ function mudar_cor_ravi_4_portas(div){
 }
 function ravi_4p_aberto(div){
   const local = div.target
-  const img = ['../imagens/Roup. RAVI 4P Reflectas - Branco.jpg','../imagens/Roup. RAVI 4P Reflectas - Grafite.jpg', '../imagens/Roup. RAVI 4P Reflectas - Olmo.jpg', '../imagens/Roup RAVI 4P Interno - Branco.jpg', '../imagens/Roup RAVI 4P Interno - Grafite.jpg', '../imagens/Roup RAVI 4P Interno - Olmo.jpg']
+  const img = ['../../imagens/Roup. RAVI 4P Reflectas - Branco.jpg','../../imagens/Roup. RAVI 4P Reflectas - Grafite.jpg', '../../imagens/Roup. RAVI 4P Reflectas - Olmo.jpg', '../../imagens/Roup RAVI 4P Interno - Branco.jpg', '../../imagens/Roup RAVI 4P Interno - Grafite.jpg', '../../imagens/Roup RAVI 4P Interno - Olmo.jpg']
   dot_ravi_4p_1.classList.remove('dot__active')
   dot_ravi_4p_2.classList.remove('dot__active')
   local.classList.add('dot__active')
@@ -178,7 +176,7 @@ function ravi_4p_aberto(div){
 function mudar_cor_ravi_3_portas(div){
   /* troca a borda para a cor da imagem mostrada */
   const local = div.target
-  const img = ['../imagens/Roup. RAVI 3P Reflectas - Branco.jpg','../imagens/Roup. RAVI 3P Reflectas - grafite.jpg','../imagens/Roup. RAVI 3P Reflectas - Olmo.jpg']
+  const img = ['../../imagens/Roup. RAVI 3P Reflectas - Branco.jpg','../../imagens/Roup. RAVI 3P Reflectas - grafite.jpg','../../imagens/Roup. RAVI 3P Reflectas - Olmo.jpg']
   if(local.classList.contains('active')){
     return
     }else{
@@ -205,7 +203,7 @@ function mudar_cor_ravi_3_portas(div){
 }
 function ravi_3p_aberto(div){
   const local = div.target
-  const img = ['../imagens/Roup. RAVI 3P Reflectas - Branco.jpg','../imagens/Roup. RAVI 3P Reflectas - Grafite.jpg', '../imagens/Roup. RAVI 3P Reflectas - Olmo.jpg', '../imagens/Roup RAVI 3P Interno - Branco.jpg', '../imagens/Roup RAVI 3P Interno - Grafite.jpg', '../imagens/Roup RAVI 3P Interno - Olmo.jpg']
+  const img = ['../../imagens/Roup. RAVI 3P Reflectas - Branco.jpg','../../imagens/Roup. RAVI 3P Reflectas - Grafite.jpg', '../../imagens/Roup. RAVI 3P Reflectas - Olmo.jpg', '../../imagens/Roup RAVI 3P Interno - Branco.jpg', '../../imagens/Roup RAVI 3P Interno - Grafite.jpg', '../../imagens/Roup RAVI 3P Interno - Olmo.jpg']
   dot_ravi_3p_1.classList.remove('dot__active')
   dot_ravi_3p_2.classList.remove('dot__active')
   local.classList.add('dot__active')
@@ -232,7 +230,7 @@ function ravi_3p_aberto(div){
 function mudar_cor_ravi_2_portas(div){
   /* troca a borda para a cor da imagem mostrada */
   const local = div.target
-  const img = ['../imagens/Roup. RAVI 2P Reflectas - Branco.jpg','../imagens/Roup. RAVI 2P Reflectas - Grafite.jpg','../imagens/Roup. RAVI 2P Reflectas - Olmo.jpg']
+  const img = ['../../imagens/Roup. RAVI 2P Reflectas - Branco.jpg','../../imagens/Roup. RAVI 2P Reflectas - Grafite.jpg','../../imagens/Roup. RAVI 2P Reflectas - Olmo.jpg']
   if(local.classList.contains('active')){
     return
     }else{
@@ -259,7 +257,7 @@ function mudar_cor_ravi_2_portas(div){
 }
 function ravi_2p_aberto(div){
   const local = div.target
-  const img = ['../imagens/Roup. RAVI 2P Reflectas - Branco.jpg','../imagens/Roup. RAVI 2P Reflectas - Grafite.jpg', '../imagens/Roup. RAVI 2P Reflectas - Olmo.jpg', '../imagens/Roup RAVI 2P Interno - Branco.jpg', '../imagens/Roup RAVI 2P Interno - Grafite.jpg', '../imagens/Roup RAVI 2P Interno - Olmo.jpg']
+  const img = ['../../imagens/Roup. RAVI 2P Reflectas - Branco.jpg','../../imagens/Roup. RAVI 2P Reflectas - Grafite.jpg', '../../imagens/Roup. RAVI 2P Reflectas - Olmo.jpg', '../../imagens/Roup RAVI 2P Interno - Branco.jpg', '../../imagens/Roup RAVI 2P Interno - Grafite.jpg', '../../imagens/Roup RAVI 2P Interno - Olmo.jpg']
   dot_ravi_2p_1.classList.remove('dot__active')
   dot_ravi_2p_2.classList.remove('dot__active')
   local.classList.add('dot__active')
@@ -286,7 +284,7 @@ function ravi_2p_aberto(div){
 function mudar_cor_ravi_1_portas(div){
   /* troca a borda para a cor da imagem mostrada */
   const local = div.target
-  const img = ['../imagens/Roup. RAVI 1P Reflecta - Branco.jpg','../imagens/Roup. RAVI 1P Reflecta - Grafite.jpg','../imagens/Roup. RAVI 1P Reflecta - Olmo.jpg']
+  const img = ['../../imagens/Roup. RAVI 1P Reflecta - Branco.jpg','../../imagens/Roup. RAVI 1P Reflecta - Grafite.jpg','../../imagens/Roup. RAVI 1P Reflecta - Olmo.jpg']
   if(local.classList.contains('active')){
     return
     }else{
@@ -313,7 +311,7 @@ function mudar_cor_ravi_1_portas(div){
 }
 function ravi_1p_aberto(div){
   const local = div.target
-  const img = ['../imagens/Roup. RAVI 1P Reflecta - Branco.jpg','../imagens/Roup. RAVI 1P Reflecta - Grafite.jpg', '../imagens/Roup. RAVI 1P Reflecta - Olmo.jpg', '../imagens/Roup RAVI 1P Interno v.1 - Branco.jpg', '../imagens/Roup RAVI 1P Interno v.1 - Grafite.jpg', '../imagens/Roup RAVI 1P Interno v.1 - Olmo.jpg']
+  const img = ['../../imagens/Roup. RAVI 1P Reflecta - Branco.jpg','../../imagens/Roup. RAVI 1P Reflecta - Grafite.jpg', '../../imagens/Roup. RAVI 1P Reflecta - Olmo.jpg', '../../imagens/Roup RAVI 1P Interno v.1 - Branco.jpg', '../../imagens/Roup RAVI 1P Interno v.1 - Grafite.jpg', '../../imagens/Roup RAVI 1P Interno v.1 - Olmo.jpg']
   dot_ravi_1p_1.classList.remove('dot__active')
   dot_ravi_1p_2.classList.remove('dot__active')
   local.classList.add('dot__active')
@@ -340,7 +338,7 @@ function ravi_1p_aberto(div){
 function mudar_cor_ravi_canto(div){
   /* troca a borda para a cor da imagem mostrada */
   const local = div.target
-  const img = ['../imagens/Roup. RAVI Canto Reflecta - Branco.jpg','../imagens/Roup. RAVI Canto Reflecta - Grafite.jpg','../imagens/Roup. RAVI Canto Reflecta - Olmo.jpg']
+  const img = ['../../imagens/Roup. RAVI Canto Reflecta - Branco.jpg','../../imagens/Roup. RAVI Canto Reflecta - Grafite.jpg','../../imagens/Roup. RAVI Canto Reflecta - Olmo.jpg']
   if(local.classList.contains('active')){
     return
     }else{
@@ -363,13 +361,14 @@ function mudar_cor_ravi_canto(div){
   }else{
     imagem_ravi_canto.src=img[2]
   }
+
 }
 
 /* Ravi cabeceira */
 function mudar_cor_ravi_cabeceira(div){
   /* troca a borda para a cor da imagem mostrada */
   const local = div.target
-  const img = ['../imagens/Modulado Ravi Mesa de Cabeceira 1208 Branco - (1) F.I. Aberto Sem Decoração.jpg','../imagens/Modulado Ravi Mesa de Cabeceira 1208 Grafito - (1) F.I. Aberto Sem Decoração.jpg','../imagens/Modulado Ravi Mesa de Cabeceira 1208 Olmo - (1) F.I. Aberto Sem Decoração.jpg']
+  const img = ['../../imagens/Modulado Ravi Mesa de Cabeceira 1208 Branco - (1) F.I. Aberto Sem Decoração.jpg','../../imagens/Modulado Ravi Mesa de Cabeceira 1208 Grafito - (1) F.I. Aberto Sem Decoração.jpg','../../imagens/Modulado Ravi Mesa de Cabeceira 1208 Olmo - (1) F.I. Aberto Sem Decoração.jpg']
   if(local.classList.contains('active')){
     return
     }else{
