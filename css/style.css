@@ -939,6 +939,10 @@ video {
   overflow: auto;
 }
 
+.overscroll-auto {
+  overscroll-behavior: auto;
+}
+
 .overscroll-none {
   overscroll-behavior: none;
 }
