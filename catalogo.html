@@ -28,7 +28,13 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:wght@100..900&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="page-flip.browser.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <script src="script_page-flip.js" defer></script>
@@ -197,5 +203,46 @@
         </div>
       </div>
     </footer>
+    <button
+      id="btn-leitura"
+      class="md:hidden fixed bottom-6 right-6 z-40 flex items-center gap-2 rounded-full bg-primary px-5 py-3 font-semibold text-white shadow-lg transition-transform active:bg-neutral-700"
+      aria-label="Ativar Modo Leitura"
+    >
+      <i class="fa-solid fa-expand"></i>
+      <span>Ler com Zoom</span>
+    </button>
+
+    <section
+      id="overlay-leitura"
+      class="fixed inset-0 z-50 hidden h-[100dvh] w-full flex-col bg-black/95 backdrop-blur-sm"
+      aria-modal="true"
+      role="dialog"
+    >
+      <header
+        class="flex w-full items-center justify-between bg-gradient-to-b from-black/80 to-transparent p-4"
+      >
+        <p class="text-sm font-medium text-gray-200">
+          Use dois dedos para dar zoom
+        </p>
+        <button
+          id="btn-fechar-leitura"
+          class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-colors active:bg-white/20"
+          aria-label="Fechar"
+        >
+          <i class="fa-solid fa-x" style="color: #ffffff"></i>
+        </button>
+      </header>
+
+      <article
+        class="flex-1 overflow-auto overscroll-none p-2 flex justify-center items-center"
+      >
+        <img
+          id="img-leitura"
+          src=""
+          alt="Página do Catálogo"
+          class="h-auto w-full max-w-none object-contain"
+        />
+      </article>
+    </section>
   </body>
 </html>
