@@ -205,7 +205,7 @@
     </footer>
     <button
       id="btn-leitura"
-      class="md:hidden fixed bottom-6 right-6 z-40 flex items-center gap-2 rounded-full bg-primary px-5 py-3 font-semibold text-white shadow-lg transition-transform active:bg-neutral-700"
+      class="fixed bottom-6 right-6 z-40 flex items-center gap-2 rounded-full bg-primary px-5 py-3 font-semibold text-white shadow-lg transition-transform active:bg-neutral-700"
       aria-label="Ativar Modo Leitura"
     >
       <i class="fa-solid fa-expand"></i>
@@ -221,9 +221,7 @@
       <header
         class="flex w-full items-center justify-between bg-gradient-to-b from-black/80 to-transparent p-4"
       >
-        <p class="text-sm font-medium text-gray-200">
-          Use dois dedos para dar zoom
-        </p>
+        <p id="texto_zoom" class="text-sm font-medium text-gray-200"></p>
         <button
           id="btn-fechar-leitura"
           class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-colors active:bg-white/20"
@@ -234,14 +232,26 @@
       </header>
 
       <article
-        class="flex-1 overflow-auto overscroll-auto p-2 flex justify-center items-center"
+        id="container-leitura"
+        class="relative flex-1 overflow-hidden p-2 flex items-center justify-center cursor-grab active:cursor-grabbing w-full h-screen"
       >
-        <img
-          id="img-leitura"
-          src=""
-          alt="Página do Catálogo"
-          class="h-auto w-full max-w-none object-contain"
-        />
+        <div
+          id="wrapper-leitura"
+          class="flex flex-row items-center justify-center w-full h-full will-change-transform"
+        >
+          <img
+            id="img-leitura-esq"
+            src=""
+            class="h-full w-auto object-contain pointer-events-none max-w-[50%]"
+            alt="Página Esquerda"
+          />
+          <img
+            id="img-leitura-dir"
+            src=""
+            class="h-full w-auto object-contain pointer-events-none max-w-[50%] hidden"
+            alt="Página Direita"
+          />
+        </div>
       </article>
     </section>
   </body>
