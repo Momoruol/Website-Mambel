@@ -13,7 +13,7 @@ const imagensCatalogo = [
   "./catalogo/page_36.jpg", "./catalogo/page_37.jpg", "./catalogo/page_38.jpg", "./catalogo/page_39.jpg", "./catalogo/page_40.jpg",
   "./catalogo/page_41.jpg", "./catalogo/page_42.jpg", "./catalogo/page_43.jpg", "./catalogo/page_44.jpg", "./catalogo/page_45.jpg",
   "./catalogo/page_46.jpg", "./catalogo/page_47.jpg", "./catalogo/page_48.jpg", "./catalogo/page_49.jpg", "./catalogo/page_50.jpg",
-  "./catalogo/page_51.jpg", "./catalogo/page_52.jpg"
+  "./catalogo/page_51.jpg", "./catalogo/page_52.jpg", "./catalogo/page_53.jpg", "./catalogo/page_54.jpg", "./catalogo/page_55.jpg", "./catalogo/page_56.jpg", "./catalogo/page_57.jpg", "./catalogo/page_58.jpg", "./catalogo/page_59.jpg", "./catalogo/page_60.jpg"
 ];
 
 // Elementos do DOM
